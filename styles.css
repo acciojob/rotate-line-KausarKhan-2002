@@ -1,1 +1,23 @@
 /*  your css code here. If applicable */
+
+#line {
+  color: black;
+  width: 200px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black;
+  animation: animate 1s linear infinite;
+  -webkit-animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
